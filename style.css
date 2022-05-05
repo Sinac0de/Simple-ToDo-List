@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+@import url("./styles/fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "iransans";
+    color: var(--main-black);
+    list-style: none;
+}
+
+/*----------------
+    Variables
+-----------------*/
+
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #18375f;
+    --main-black: #222;
+    --main-white: #ffffff;
+    --main-red: #ff3c00;
+    --main-blue: #0066ff;
+    --main-green: rgb(0, 138, 23);
+    --main-gray: #afafaf;
+    --body-bg-color: rgb(241, 241, 241);
+    --main-transition: all 0.5s linear;
+    --main-spacing: 0.1rem;
+    --body-bg: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    --body-color: #0093E9;
+
+}
+
+
+
+body {
+    height: 100vh;
+    background: var(--body-bg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: .5em;
+    margin-top: 1em;
+    font-size: 3rem;
+    font-family: "Ubuntu", "sans-serif";
+    font-weight: bold;
+    color: var(--main-white);
+}
+
+/*---------------
+Todo input and add btn
+----------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    height: 3em;
+    background: var(--main-white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.todo-input {
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 1em;
+    color: var(--main-black);
+}
+
+form input,
+form button {
+    border: none;
+    outline: none;
+    background-color: var(--main-white);
+}
+
+.todo-add {
+    font-size: 1.2rem;
+    padding: .7em;
+    transition: color .2s, background-color .2s;
+}
+
+/*---------------
+Todo list and todos
+----------------*/
+
+.todoList {
+    width: 90%;
+    border: 1px solid red;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: .5em;
+    padding: .5em 1em;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.todo li {
+    flex: 1;
+    font-weight: bold;
+    color: var(--main-white);
+}
+
+
+.todo span {
+    font-size: 1.2rem;
+    padding: .3em;
+}
+
+.fa-trash-can {
+    color: var(--main-white);
+    color: rgb(255, 110, 110);
+}
+
+.fa-circle-check {
+    color: var(--main-white);
+    color: rgb(132, 185, 255);
+
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+    /* transform: translateX(3px); */
+}
+
+/*---------------
+Filter todos style
+----------------*/
+
+select {
+    display: absolute;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 1.1em;
+    border-radius: 50% 50% 0 0;
+    font-weight: bold;
+    width: 100%;
+    font-weight: bolder;
+    color: var(--primary-color);
+    overflow: hidden;
+}
