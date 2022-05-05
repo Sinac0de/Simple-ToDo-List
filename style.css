@@ -14,12 +14,12 @@
 -----------------*/
 
 :root {
-    --primary-color: #ff6600;
+    --primary-color: #ff6f00;
     --secondary-color: #18375f;
     --main-black: #222;
     --main-white: #ffffff;
-    --main-red: #ff3c00;
-    --main-blue: #0066ff;
+    --main-light-red: rgb(255, 110, 110);
+    --main-light-blue: rgb(132, 185, 255);
     --main-green: rgb(0, 138, 23);
     --main-gray: #afafaf;
     --body-bg-color: rgb(241, 241, 241);
@@ -33,7 +33,7 @@
 
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--body-bg);
     background-repeat: no-repeat;
     display: flex;
@@ -44,7 +44,7 @@ body {
 header h1 {
     margin: .5em;
     margin-top: 1em;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Ubuntu", "sans-serif";
     font-weight: bold;
     color: var(--main-white);
@@ -75,12 +75,13 @@ form {
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.1);
 }
 
 .todo-input {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    flex: 1;
+    width: 80%;
     padding-left: 1em;
     color: var(--main-black);
 }
@@ -93,8 +94,8 @@ form button {
 }
 
 .todo-add {
-    font-size: 1.2rem;
-    padding: .7em;
+    font-size: 1.5rem;
+    padding: .6em;
     transition: color .2s, background-color .2s;
 }
 
@@ -104,7 +105,6 @@ Todo list and todos
 
 .todoList {
     width: 90%;
-    border: 1px solid red;
 }
 
 .todo {
@@ -116,29 +116,29 @@ Todo list and todos
     padding: .5em 1em;
     background-color: var(--secondary-color);
     transition: all 0.3s ease;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.1);
 }
 
 .todo li {
     flex: 1;
     font-weight: bold;
     color: var(--main-white);
+    overflow: scroll;
 }
 
 
 .todo span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: .3em;
 }
 
 .fa-trash-can {
-    color: var(--main-white);
-    color: rgb(255, 110, 110);
+    color: var(--main-light-red);
+
 }
 
 .fa-circle-check {
-    color: var(--main-white);
-    color: rgb(132, 185, 255);
-
+    color: var(--main-light-blue);
 }
 
 .completed {
@@ -162,10 +162,18 @@ select {
     outline: none;
     border: none;
     padding: 1.1em;
+
     border-radius: 50% 50% 0 0;
     font-weight: bold;
     width: 100%;
     font-weight: bolder;
-    color: var(--primary-color);
+    box-shadow: 0px -13px 17px 7px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+    color: var(--main-white);
     overflow: hidden;
+}
+
+select option {
+    background-color: var(--main-white);
+    font-weight: bolder;
 }
