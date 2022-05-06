@@ -15,6 +15,8 @@ todoList.addEventListener('click', checkRemove);
 
 filterTodo.addEventListener('click', filterTodos);
 
+document.addEventListener("DOMContentLoaded", getLocalTodos);
+
 /*----------
   Functions
 -----------*/
@@ -32,6 +34,7 @@ function addTodo(e) {
         <span><i class="delete-todo fa-solid fa-trash-can"></i></span>`;
         todoDiv.innerHTML = newTodo;
         todoList.appendChild(todoDiv); // add todo to DOM
+        saveLocalTodos(todoInput.value);//save the value in Local storage
         todoInput.value = ""; //reset the input value
     } else {
         alert("Please Enter a text first! / !لطفا ابتدا یک مقدار وارد کنید");
@@ -78,5 +81,31 @@ function filterTodos(e) {
 }
 
 
+function saveLocalTodos(todo) {
+    let savedTodos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : [];
+    savedTodos.push(todo);
+    localStorage.setItem("todos", JSON.stringify(savedTodos));
+}
 
+//show local todos on DOM
+function getLocalTodos() {
+    let savedTodos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : [];
+    savedTodos.forEach(todo => {
+        const todoDiv = document.createElement("div");
+        todoDiv.classList.add("todo"); //add class to the new todo
+        const newTodo = `<li>${todo}</li>
+        <span><i class="check-todo fa-solid fa-circle-check"></i></span>
+        <span><i class="delete-todo fa-solid fa-trash-can"></i></span>`; //dynamically create tags using backtick
+        todoDiv.innerHTML = newTodo; //add html tags inside the new todo div
+        todoList.appendChild(todoDiv);
+    });
+}
+
+function removeLocalTodos(todo) {
+    let savedTodos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : [];
+    const filteredLocalTodos = savedTodos.filter(t => {
+        return t != todo.children[0].innerText;
+    });
+    localStorage.setItem("todos", JSON.stringify(filteredLocalTodos));
+}
 
