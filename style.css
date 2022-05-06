@@ -108,7 +108,7 @@ form button {
 Todo list and todos
 ----------------*/
 
-.todoList {
+.todo-list {
     width: 90%;
 }
 
@@ -201,7 +201,7 @@ Media Queries
         width: 30em;
     }
 
-    .todoList {
+    .todo-list {
         width: 30rem;
     }
 
