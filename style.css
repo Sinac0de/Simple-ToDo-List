@@ -15,7 +15,7 @@
 -----------------*/
 
 :root {
-    --primary-color: #ff6f00;
+    --primary-color: #ff7c31;
     --secondary-color: #18375f;
     --main-black: #222;
     --main-white: #ffffff;
@@ -198,11 +198,11 @@ Media Queries
 
     form {
         height: auto;
-        width: 27em;
+        width: 30em;
     }
 
     .todoList {
-        width: 27rem;
+        width: 30rem;
     }
 
     .todo {
@@ -274,6 +274,10 @@ Media Queries
 
     .todo span {
         font-size: 1.2rem;
+    }
+
+    .todo span:hover {
+        cursor: pointer;
     }
 
     .todo-add {
