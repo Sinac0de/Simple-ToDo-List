@@ -98,8 +98,8 @@ form button {
 }
 
 .todo-add {
-    font-size: 1.5rem;
-    padding: .6em;
+    font-size: 1.7rem;
+    padding: .7em;
     transition: color .2s, background-color .2s;
 }
 
@@ -142,7 +142,7 @@ Todo list and todos
 
 
 .todo span {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: .3em;
 }
 
