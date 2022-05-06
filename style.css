@@ -147,10 +147,6 @@ Todo list and todos
     padding: .3em;
 }
 
-.todo span:hover {
-    cursor: pointer;
-}
-
 .fa-trash-can {
     color: var(--main-light-red);
 }
@@ -287,7 +283,9 @@ Media Queries
         font-size: 1.2rem;
     }
 
-
+    .todo span:hover {
+        cursor: pointer;
+    }
 
     .todo-add {
         font-size: 1.2rem;
