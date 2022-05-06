@@ -51,6 +51,7 @@ function checkRemove(e) {
 
     } else if (classList[0] == "delete-todo") {//if the element is deleteTodo
         const todo = item.parentElement.parentElement;
+        removeLocalTodos(todo);
         todo.remove(); //remove Todo from DOM
     }
 }
