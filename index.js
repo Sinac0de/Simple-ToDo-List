@@ -13,7 +13,7 @@ todoAddBtn.addEventListener('click', addTodo);
 
 todoList.addEventListener('click', checkRemove);
 
-filterTodo.addEventListener('click', filterTodos);
+filterTodo.addEventListener('change', filterTodos);
 
 document.addEventListener("DOMContentLoaded", getLocalTodos);
 
