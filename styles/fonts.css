@@ -1,6 +1,6 @@
 @font-face {
     font-family: iransans;
-    src: url("./Iranian-fonts/IranSans/Sans\ a4fran3.eot") format("embedded-opentype"),
-        url("./Iranian-fonts/IranSans/Sans\ a4fran3.ttf") format("ttf"),
-        url("./Iranian-fonts/IranSans/Sans\ a4fran3.woff") format("woff");
+    src: url("/Iranian-fonts/IranSans/Sans\ a4fran3.eot") format("embedded-opentype"),
+        url("/Iranian-fonts/IranSans/Sans\ a4fran3.ttf") format("ttf"),
+        url("/Iranian-fonts/IranSans/Sans\ a4fran3.woff") format("woff");
 }
