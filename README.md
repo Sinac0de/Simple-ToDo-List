@@ -8,7 +8,7 @@
 * [Technologies Used](#technologies-used)
 
 # <a name="project-demo"></a>Project Demo
-* You can see the Demo <a href="https://sinac0de.github.io/JS-Drum-Kit/">Here</a> 
+* You can see the Demo <a href="https://sinac0de.github.io/ToDo-List-VanillaJs/">Here</a> 
 
 # <a name="technologies-used"></a>Technologies Used
 * Html5
