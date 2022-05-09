@@ -8,7 +8,7 @@
 * [Technologies Used](#technologies-used)
 
 # <a name="project-demo"></a>Project Demo
-* You can see the Demo <a href="https://papaya-empanada-1d35c1.netlify.app/">Here</a> 
+* You can see the Demo <a href="https://sinasimpletodolist.netlify.app/">Here</a> 
 
 # <a name="technologies-used"></a>Technologies Used
 * Html5
