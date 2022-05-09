@@ -281,7 +281,8 @@ Media Queries
         font-size: 1.2rem;
     }
 
-    .todo span:hover {
+    .fa-trash-can:hover,
+    .fa-circle-check:hover {
         cursor: pointer;
     }
 
