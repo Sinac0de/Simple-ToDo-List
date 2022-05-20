@@ -210,6 +210,7 @@ Media Queries
     form {
         height: auto;
         width: 30em;
+        height: 45px;
     }
 
     .todo-list {
@@ -225,6 +226,7 @@ Media Queries
         padding: .5em 1em;
         background: var(--secondary-color);
         transition: all 0.3s ease;
+
     }
 
     .todo li {
@@ -254,6 +256,7 @@ Media Queries
         height: auto;
         padding: 0.87em;
         width: 12rem;
+        height: 45px;
         margin-left: .5em;
         display: block;
         text-align: left;
