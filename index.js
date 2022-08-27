@@ -33,7 +33,6 @@ function addTodo(e) {
         <span><i class="check-todo fa-solid fa-circle-check"></i></span>
         <span><i class="delete-todo fa-solid fa-trash-can"></i></span>`;
         todoDiv.innerHTML = newTodo;
-        // todoList.appendChild(todoDiv); // add todo to DOM
         todoList.prepend(todoDiv);
         saveLocalTodos(todoInput.value);//save the value in Local storage
         todoInput.value = ""; //reset the input value
@@ -99,7 +98,6 @@ function getLocalTodos() {
         <span><i class="check-todo fa-solid fa-circle-check"></i></span>
         <span><i class="delete-todo fa-solid fa-trash-can"></i></span>`; //dynamically create tags using backtick
         todoDiv.innerHTML = newTodo; //add html tags inside the new todo div
-        // todoList.appendChild(todoDiv);
         todoList.prepend(todoDiv);
     });
 }
