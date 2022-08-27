@@ -127,7 +127,6 @@ Todo list and todos
     padding: .5em 1em;
     background-color: var(--secondary-color);
     transition: all 0.3s ease;
-    transition: all 5s ease;
 }
 
 .todo li {
